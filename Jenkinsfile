@@ -22,5 +22,11 @@ pipeline {
                 sh 'npm test'
             }
         }
+        tage('Build Image') {
+            steps {
+                echo 'Building Image...'
+                sh 'npm test'
+            }
+        }
     }
 }
