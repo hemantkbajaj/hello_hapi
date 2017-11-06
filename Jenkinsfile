@@ -25,7 +25,7 @@ pipeline {
         tage('Build Image') {
             steps {
                 echo 'Building Image...'
-                sh 'npm test'
+                sh 'docker build -t hemantimagetest .'
             }
         }
     }
