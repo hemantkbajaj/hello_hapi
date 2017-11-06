@@ -22,7 +22,7 @@ pipeline {
                 sh 'npm test'
             }
         }
-        tage('Image') {
+        stage('Image') {
             steps {
                 echo 'Building Image...'
                 sh 'docker build -t hemantimagetest .'
